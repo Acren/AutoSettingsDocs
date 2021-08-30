@@ -51,15 +51,15 @@ Plugin  | Engine | Example Project
 
 ## Release Notes
 
-### 1.19
+### 1.19 {#1_19}
 
 - UE 4.27 now supported
 
-### 1.18.1
+### 1.18.1 {#1_18_1}
 
 - Fixed a bug in the previous version preventing the default preset not being used if the player's Base Preset Tag was not specified
 
-### 1.18
+### 1.18 {#1_18}
 
 - Moved input-related logic to a new module called AutoSettingsInput. This should be a seamless change from Blueprint, but module and class names may have to be updated if you are referencing input-related plugin API from code. The new Input module also has its own page in the project settings, which is migrated from the existing page automatically.
 - Added a LoadKeyIcons helper function to preload key icons
@@ -68,31 +68,31 @@ Plugin  | Engine | Example Project
 - Fixed Linked Mapping Groups configuration not working as expected
 - Internal changes to support automated testing 
 
-### 1.17.1
+### 1.17.1 {#1_17_1}
 
 - Fixed a crash in the previous version when binding input for a mapping group which is empty on the base preset
 
-### 1.17
+### 1.17 {#1_17}
 
 - Mouse axis directions are now captured by BindCapturePrompt. Now you can capture inverted mappings such as Mouse Down for Look Up, etc, instead of only the axis itself.
 - Fixed a bug causing the default key for an axis mapping to not be captured after an axis key was bound (e.g. MoveForward not being set to W again after it was bound to Mouse Y axis)
 
-### 1.16.1
+### 1.16.1 {#1_16_1}
 
 - Fixed a bug with the directional axis icons in 1.16 where inverted icons were being shown for the Gamepad Right Stick Y axis because of how Unreal or the underlying drivers invert it under the hood. The plugin should now "flip back" the displayed axis if the axis mapping has the -1 scale, which is how Right Stick Y is normally mapped to undo the inversion.
 
-### 1.16
+### 1.16 {#1_16}
 
 - Added support for showing directional axis button icons if the texture is available. For example, show the icon for Gamepad Left Stick Up if it exists instead of Gamepad Left Stick Y if the scale is 1, or Gamepad Left Stick Down if the scale is -1.
 - Added directional thumbstick icons to the example project (These are custom-made based on the royalty-free ones by Xelu)
 - Exposed more widget properties with BlueprintReadWrite and EditAnywhere
 - Minor code improvements and cleanup
 
-### 1.15
+### 1.15 {#1_15}
 
 - UE 4.26 now supported
 
-### 1.14
+### 1.14 {#1_14}
 
 New:
 
@@ -104,7 +104,7 @@ Fixed:
 - Fixed player inputs not being registered in Play As Client
 - Fixed a crash when using the debug camera (; key) in editor, because Auto Settings wasn't expecting the `Local Player` to be removed
 
-### 1.13
+### 1.13 {#1_13}
 
 Fixed:
 
@@ -115,7 +115,7 @@ Example project:
 
 - The numeric label in the `Styled Slider Setting` widget is now an editable text box which allows the user to set the value more precisely
 
-### 1.12
+### 1.12 {#1_12}
 
 New:
 
@@ -134,7 +134,7 @@ Example project:
  - Added secondary columns on the Input page for both KB+M and Gamepad as a new example of multiple mapping groups in use
  - Added another map with an example scenario showing the implementation of custom saving and loading logic to store player inputs on a Save Game class instead of in config files, which is useful when shipping on console platforms
 
-### 1.11
+### 1.11 {#1_11}
 
 - UE 4.25 now supported
 - All setting widgets now preview the current CVar value in editor
@@ -144,13 +144,13 @@ Example project:
 - Axis Associations for Gamepad thumbsticks are now set up by default in the project settings
 - Improved logging and error handling
 
-### 1.10.1
+### 1.10.1 {#1_10_1}
 
 Example project:
 
 - Removed debug print that was left in by mistake
 
-### 1.10
+### 1.10 {#1_10}
 
 New:
 
@@ -164,7 +164,7 @@ Example project:
 
 - Music now keeps playing visualized even while volume is zero
 
-### 1.9
+### 1.9 {#1_9}
 
 New:
 
@@ -177,7 +177,7 @@ Fixed:
 - Bool CVar functions now correctly operate on actual bool CVars.
 - Fixed crash in `BindCaptureButton` when `BindCapturePromptClass` is null
 
-### 1.8
+### 1.8 {#1_8}
 
 New:
 
@@ -196,39 +196,39 @@ Example project:
 
 **Note:** There appears to be a bug in Unreal 4.24.0 which prevents plugins loading from the Project/Plugins directory in packaged builds if the project is Blueprint-only. This is not a problem with Auto Settings specifically, but consider installing the plugin to the engine or adding source to your project if you are running into this issue.
 
-### 1.7.1
+### 1.7.1 {#1_7_1}
 
 - Plugin LoadingPhase changed to `PreDefault`, fixing a bug occurring in some projects that was causing Blueprints that were referencing the plugin to break when the engine was loaded
 
-### 1.7
+### 1.7 {#1_7}
 
 - UE 4.23 now supported
 
-### 1.6
+### 1.6 {#1_6}
 
 - UE 4.22 now supported
 
-### 1.5.4
+### 1.5.4 {#1_5_4}
 
 - Fixed `SetPlayerKeyGroup` (for dynamic icon display based on input device) not working
 
-### 1.5.3
+### 1.5.3 {#1_5_3}
 
 - Fixed crash in some projects due to `KeyLabel` binding a delegate that is already bound
 
-### 1.5.2
+### 1.5.2 {#1_5_2}
 
 - Fixed Blueprint Category issue causing package to fail (UE 4.21)
 
-### 1.5.1
+### 1.5.1 {#1_5_1}
 
 - UE 4.21 now supported
 
-### 1.5.0.1
+### 1.5.0.1 {#1_5_0_1}
 
 - Fixed Blueprint Category issue causing package to fail (UE 4.20)
 
-### 1.5
+### 1.5 {#1_5}
 
 New:
 
@@ -251,18 +251,18 @@ Editor:
 This requires the KeyLabel you are using to implement `UpdateKeyLabel`
 - Added `TitleProperty` meta tag to many config arrays allowing the contents to be viewed more easily while editing Auto Settings config in project settings
 
-### 1.4.1
+### 1.4.1 {#1_4_1}
 
 - Properly exposed `Apply Setting` and `Save Setting` functions to Blueprint. These were intended to be exposed in a previous version but not correctly set up as static Blueprint-callable functions.
 
-### 1.4
+### 1.4 {#1_4}
 
 - UE 4.20 now supported
 - Plugin developer config (AutoSettings page in Project Settings) converted to use *Game* category instead of *EditorPerProjectUserSettings* category
 
 **Important note:** Because of the config category change, projects upgrading from older versions of the plugin will have to move or copy the `[/Script/AutoSettings.AutoSettingsConfig]` category, including all of its entries, from `YourProject/Config/DefaultEditorPerProjectUserSettings.ini` to `YourProject/Config/DefaultGame.ini` to retain existing config values.
 
-### 1.3
+### 1.3 {#1_3}
 
 New:
 
@@ -290,26 +290,26 @@ Example project:
 - Added UI to video settings page to demonstrate manual save / apply / cancel functionality.
 - Added gamma setting to video settings.
 
-### 1.2.4
+### 1.2.4 {#1_2_4}
 
 - ComboBox setting now chooses not to apply or save settings when the selection is changed externally - this fixes a crash that could happen when constructing new widgets
 - Fixed a crash when external code tries to register CVar change callback delegates that are already registered - warn instead
 
-### 1.2.3
+### 1.2.3 {#1_2_3}
 
 - Fixed crash in multiplayer in 4.19 due to trying to initialize input mappings when a PlayerController does not have a valid PlayerInput
 - Fixed "Allow multiple bindings per key" option not taking effect
 
-### 1.2.2
+### 1.2.2 {#1_2_2}
 
 - UE 4.19 now supported
 
-### 1.2.1
+### 1.2.1 {#1_2_1}
 
 - Fixed category-related errors from 1.2 upon packaging the game with the installed plugin
 - Fixed crash with extra clients in multiple-process play in editor
 
-### 1.2
+### 1.2 {#1_2}
 
 New:
 
@@ -335,11 +335,11 @@ Example project:
 - Gamepad Right Stick Up and Down are now mapped to axis scales -1 and 1 respectively instead of 1 and -1. This is because the right stick Y axis has the opposite values of the left stick and I didn't realise when initially setting it up.
 - Added video setting for Max FPS.
 
-### 1.1.1
+### 1.1.1 {#1_1_1}
 
 - UE 4.18 now supported
 
-### 1.1
+### 1.1 {#1_1}
 
 - Added a function on `Slider Setting` called when its value changes. This allows users to easily have a text label reflect the value.
 - Added tooltip to option value explaining that it falls back to the array index if blank
@@ -353,6 +353,6 @@ Example project:
 - Fixed category errors when packaging
 - Fixed crash from widgets attempting to apply or save settings during design time
 
-### 1.0
+### 1.0 {#1_0}
 
 - Initial plugin release supporting 4.17
