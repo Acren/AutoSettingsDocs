@@ -53,7 +53,7 @@ The project will need to support code and compile through Visual Studio or anoth
 To allow the plugin to compile on other platforms, you need to add them to the `WhitelistPlatforms` section in the `AutoSettings.uplugin` file, or remove the whitelist section to allow it to be compiled on every platform.
 
 :::note
-The `AutoSettings.uplugin` file can be found in the AutoSettings plugin directory, typically be found at `Epic Games\UE_4.26\Engine\Plugins\Marketplace\AutoSettings`.
+The `AutoSettings.uplugin` file can be found in the AutoSettings plugin directory, typically be found at `Epic Games\<Version>\Engine\Plugins\Marketplace\AutoSettings`.
 :::
 
 Platforms that have been known to work other than Windows include **macOS**, **Linux**, **Xbox**, **PS4**, and **Switch**. Others may not have been tested yet.
