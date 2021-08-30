@@ -7,8 +7,6 @@ sidebar_position: 4
 
 To add a setting to your menu, place the widget for the desired control type from the **AutoSettings Setting Controls** category anywhere in your menu.
 
-> Tip: It can be nice for layout purposes to wrap settings in a new *Setting Row* widget which consists of label text and a Named Slot to contain the control widget itself (See [example project](/example-project)) but you are free to set up the layout of your menu whichever way works best for you.
-
 ![Image](img/image15.png)
 
 All settings have the following editable properties:
@@ -22,6 +20,10 @@ All settings have the following editable properties:
 - **Auto Apply** - If true, the setting will automatically apply and call the console variable with the new value when the user changes the selection. If false, will need to be done manually with the Apply function.
 
 - **Auto Save** - If checked, the setting will automatically update the config with the new value when the user changes the selection. If false, will need to be done manually with the Save or Cancel functions. Saved settings are stored in `<Project or package>\Saved\Config\<Platform>\Settings.ini` in the `[Settings]` section.
+
+:::tip
+It can be nice for layout purposes to wrap settings in a new *Setting Row* widget which consists of label text and a Named Slot to contain the control widget itself (See [example project](/example-project)) but you are free to set up the layout of your menu whichever way works best for you.
+:::
 
 ## Select Controls
 
@@ -220,14 +222,18 @@ A working setup with multiple audio levels is implemented in the [example projec
 
 	![Image](img/audiolevels.png)
 
-	**Note:** It's important that this happens after a **Delay** node (even with 0 duration) as the Audio Devices in Unreal are not created yet when the Game Instance **Init** function is called.
+	:::note
+	It's important that this happens after a **Delay** node (even with 0 duration) as the Audio Devices in Unreal are not created yet when the Game Instance **Init** function is called.
+	:::
 
 	![Image](img/gameinstanceaudiodelay.png)
 	
 5. [Add a Setting Widget](#setting-widgets) to your menu to control the new CVar you created
 6. Add the new Sound Class to all of the audio assets that should use the new audio level
 
-> Tip: For music, it's recommended to enable **Virtualize when silent** on the sound asset. This makes it so when its volume is set to zero and then increased again, the music keeps its playback time rather than starting from the beginning again.
+:::tip
+For music, it's recommended to enable **Virtualize when silent** on the sound asset. This makes it so when its volume is set to zero and then increased again, the music keeps its playback time rather than starting from the beginning again.
+:::
 
 ## Custom Setting Widgets
 

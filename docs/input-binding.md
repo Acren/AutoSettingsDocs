@@ -49,8 +49,6 @@ Auto Settings can optionally substitute textures instead, which is particularly 
 
 Sets of key icons can be configured in the **AutoSettings** page of your project settings.
 
-> *The example project uses Xelu’s free prompts pack found [here](https://opengameart.org/content/free-keyboard-and-controllers-prompts-pack)*
-
 These key icon sets use gameplay tags for identification, which can be prioritised globally or on a per-widget basis, or both at the same time.
 
 For example, if you had small and large variants of icons used in different places in your project, you could have one set of icons with the *Icons.Small* tag and another with the *Icons.Large* tag, and specify the tag for the set you want to use on the widget for the the input mapping or label.
@@ -60,6 +58,10 @@ You can prioritise a key icon set globally using the **Set Global Key Icon Tags*
 ![Image](img/image5.png)
 
 Since you can have multiple tags on a key icon set, these two methods of switching between them can be used at the same time allowing you to switch between gamepad type based on a setting, and switch between small or large variants based on location in project.
+
+:::note
+The example project uses icons from [*Xelu’s free prompts pack*](https://thoseawesomeguys.com/prompts/)
+:::
 
 ## Reading and displaying player mappings
 
