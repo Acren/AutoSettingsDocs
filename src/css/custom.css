@@ -19,7 +19,9 @@
 
 html[data-theme='dark'] {
   --ifm-background-color: #1e2023;
+  --ifm-background-surface-color: #28292c;
   --ifm-font-color-base: rgb(180, 193, 200);
+  --ifm-color-emphasis-100: rgb(35, 37, 41);
 }
 
 .alert {
