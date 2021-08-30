@@ -5,7 +5,7 @@ slug: /
 
 # Intro
 
-![Title](img/title.png)
+![Title](img/logo_dark.png)
 
 **Auto Settings** is a game options and input binding toolkit for **Unreal Engine 4** that supports a range of functionality that is standard in modern PC and console games.
 
