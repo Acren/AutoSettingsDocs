@@ -186,7 +186,7 @@ To override them in your own project, you should set up a `ScalabilitySettings` 
 
 Any Auto Settings setting control can optionally use a Value Mask by setting the **Value Mask** property to a subclass of the **SettingValueMask** class that determines how the value of the console variables should be split and recombined.
 
-![Image](img/valuemask.png)
+![Image](img/valuemask_dark.png)
 
 Example usage might be splitting the **r.SetRes** console variable - which contains both resolution and window mode in the form of *1920x1080wf* - into two separate settings, one controlling the resolution and the other controlling the window mode.
 
