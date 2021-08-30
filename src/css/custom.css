@@ -17,13 +17,61 @@
   --ifm-code-font-size: 95%;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.alert {
+  background-color: var(--ifm-background-surface-color);
+  border-color: var(--ifm-alert-border-color);
+  color: var(--ifm-font-color-base);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+.alert a {
+  color: var(--ifm-color-primary);
+  text-decoration: var(--ifm-link-decoration);
+}
+
+.alert .admonition-heading {
+  color: var(--ifm-font-color-base);
+}
+
+.admonition-icon svg {
+  fill: var(--ifm-alert-border-color);
+  stroke: var(--ifm-alert-border-color);
+  margin-right: 12px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.admonition {
+  border: none;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0;
+  border-left-width: 0.3rem;
+  border-left-style: solid;
+  border-color: var(--ifm-alert-border-color);
+}
+
+details {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0;
+  border-left-width: 0.3rem;
+  border-left-style: solid;
+  border-color: var(--ifm-color-emphasis-900);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+  margin-bottom: 1em;
+}
+
+summary {
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-bottom: 1em;
+}
+
+.alert--secondary {
+  --ifm-alert-background-color: var(--ifm-color-emphasis-900);
+  --ifm-alert-border-color: var(--ifm-color-emphasis-900);
 }
