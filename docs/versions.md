@@ -11,51 +11,15 @@ Each plugin version is (usually) released to support the latest engine version o
 New example project versions are sometimes released with plugin versions where applicable.
 The example project does not always need to match, but it is recommended to use the most recent example project at the time that plugin version was released.
 
-Plugin  | Engine | Example Project
-------- | ------ | ------------
-1.19    | 4.27   | 1.19
-1.18.1  | 4.26   | 1.16
-1.18    | 4.26   | 1.16
-1.17.1  | 4.26   | 1.16
-1.17    | 4.26   | 1.16
-1.16.1  | 4.26   | 1.16
-1.16    | 4.26   | 1.16
-1.15    | 4.26   | 1.15
-1.14    | 4.25   | 1.13
-1.13    | 4.25   | 1.13
-1.12    | 4.25   | 1.12
-1.11    | 4.25   | 1.11
-1.10    | 4.24   | 1.10.1
-1.9     | 4.24   | 1.8
-1.8     | 4.24   | 1.8
-1.7.1   | 4.23   | 1.7
-1.7     | 4.23   | 1.7
-1.6     | 4.22   | 1.6
-1.5.4   | 4.21   | 1.5.1
-1.5.3   | 4.21   | 1.5.1
-1.5.2   | 4.21   | 1.5.1
-1.5.1   | 4.21   | 1.5.1
-1.5.0.1 | 4.20   | 1.5
-1.5     | 4.20   | 1.5
-1.4.1   | 4.20   | 1.4.0.1
-1.4     | 4.20   | 1.4.0.1
-1.3     | 4.19   | 1.3
-1.2.4   | 4.19   | 1.2.2
-1.2.3   | 4.19   | 1.2.2
-1.2.2   | 4.19   | 1.2.2
-1.2.1   | 4.18   | 1.2
-1.2     | 4.18   | 1.2
-1.1.1   | 4.18   | 1.1.1
-1.1     | 4.17   | 1.1
-1.0     | 4.17   | 1.0
-
 ## Release Notes
 
 ### 1.19 {#1_19}
+`UE 4.27` `Example Project 1.19`
 
 - UE 4.27 now supported
 
 ### 1.18.1 {#1_18_1}
+`UE 4.26` `Example Project 1.16`
 
 - Fixed a bug in the previous version preventing the default preset not being used if the player's Base Preset Tag was not specified
 
@@ -93,6 +57,7 @@ Plugin  | Engine | Example Project
 - UE 4.26 now supported
 
 ### 1.14 {#1_14}
+`UE 4.25` `Example Project 1.13`
 
 New:
 
@@ -145,6 +110,7 @@ Example project:
 - Improved logging and error handling
 
 ### 1.10.1 {#1_10_1}
+`UE 4.24` `Example Project 1.10.1`
 
 Example project:
 
@@ -197,6 +163,7 @@ Example project:
 **Note:** There appears to be a bug in Unreal 4.24.0 which prevents plugins loading from the Project/Plugins directory in packaged builds if the project is Blueprint-only. This is not a problem with Auto Settings specifically, but consider installing the plugin to the engine or adding source to your project if you are running into this issue.
 
 ### 1.7.1 {#1_7_1}
+`UE 4.23` `Example Project 1.7`
 
 - Plugin LoadingPhase changed to `PreDefault`, fixing a bug occurring in some projects that was causing Blueprints that were referencing the plugin to break when the engine was loaded
 
@@ -205,10 +172,12 @@ Example project:
 - UE 4.23 now supported
 
 ### 1.6 {#1_6}
+`UE 4.22` `Example Project 1.6`
 
 - UE 4.22 now supported
 
 ### 1.5.4 {#1_5_4}
+`UE 4.21` `Example Project 1.5.1`
 
 - Fixed `SetPlayerKeyGroup` (for dynamic icon display based on input device) not working
 
@@ -225,6 +194,7 @@ Example project:
 - UE 4.21 now supported
 
 ### 1.5.0.1 {#1_5_0_1}
+`UE 4.20` `Example Project 1.5`
 
 - Fixed Blueprint Category issue causing package to fail (UE 4.20)
 
@@ -263,6 +233,7 @@ This requires the KeyLabel you are using to implement `UpdateKeyLabel`
 **Important note:** Because of the config category change, projects upgrading from older versions of the plugin will have to move or copy the `[/Script/AutoSettings.AutoSettingsConfig]` category, including all of its entries, from `YourProject/Config/DefaultEditorPerProjectUserSettings.ini` to `YourProject/Config/DefaultGame.ini` to retain existing config values.
 
 ### 1.3 {#1_3}
+`UE 4.19` `Example Project 1.3`
 
 New:
 
@@ -305,6 +276,7 @@ Example project:
 - UE 4.19 now supported
 
 ### 1.2.1 {#1_2_1}
+`UE 4.18` `Example Project 1.2`
 
 - Fixed category-related errors from 1.2 upon packaging the game with the installed plugin
 - Fixed crash with extra clients in multiple-process play in editor
@@ -340,6 +312,7 @@ Example project:
 - UE 4.18 now supported
 
 ### 1.1 {#1_1}
+`UE 4.17` `Example Project 1.1`
 
 - Added a function on `Slider Setting` called when its value changes. This allows users to easily have a text label reflect the value.
 - Added tooltip to option value explaining that it falls back to the array index if blank
