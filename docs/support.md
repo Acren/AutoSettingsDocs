@@ -17,12 +17,15 @@ For support, bug reports, feature requests, etc, use the following channels:
 - [Twitter](https://twitter.com/itsAcren)
 - [Email](mailto:acren.marketplace@gmail.com)
 
-If you do have a bug, crash, or any other issue please let me know the following:
+## Information to provide for support
+
+If you do have a bug, crash, or any other issue please include the following information:
 
 - The engine version
 - The plugin version
 - Steps to reproduce the issue
-- Does the example project work?
+- Does the issue occur in the editor, packaged builds, or both?
+- Does the issue occur in the [example project](/example-project/)?
 - If crashing, the .log file(s) from the `ProjectName/Saved/Logs` directory
 
 Thanks!
