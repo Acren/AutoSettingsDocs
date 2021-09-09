@@ -13,10 +13,21 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.19.1 {#1_19_1}
+`UE 4.27` `Example Project 1.19`
+
+_(Same as 1.18.2 but for 4.27)_
+- Added missing includes that were obscured by precompiled headers or unity mode
+
 ### 1.19 {#1_19}
 `UE 4.27` `Example Project 1.19`
 
 - UE 4.27 now supported
+
+### 1.18.2 {#1_18_2}
+`UE 4.26` `Example Project 1.16`
+
+- Added missing includes that were obscured by precompiled headers or unity mode
 
 ### 1.18.1 {#1_18_1}
 `UE 4.26` `Example Project 1.16`
@@ -202,7 +213,8 @@ Example project:
 ### 1.5.2 {#1_5_2}
 `UE 4.21` `Example Project 1.5.1`
 
-- Fixed Blueprint Category issue causing package to fail (UE 4.21)
+_(Same as 1.5.0.1 but for 4.21)_
+- Fixed Blueprint Category issue causing package to fail
 
 ### 1.5.1 {#1_5_1}
 `UE 4.21` `Example Project 1.5.1`
@@ -212,7 +224,7 @@ Example project:
 ### 1.5.0.1 {#1_5_0_1}
 `UE 4.20` `Example Project 1.5`
 
-- Fixed Blueprint Category issue causing package to fail (UE 4.20)
+- Fixed Blueprint Category issue causing package to fail
 
 ### 1.5 {#1_5}
 `UE 4.20` `Example Project 1.5`
