@@ -49,3 +49,4 @@ It is designed be as fast and simple as possible to use, building on top of and 
 - Easily access icon or text label for an input anywhere in your project so that your UI and prompts always shows the correct inputs
 - Ability to define different icon sets for different platforms or gamepad types such as XBox and PlayStation and switch between them on the fly
 - Ability to define different variants of icons such as small and large that can be used in different places in your project
+
