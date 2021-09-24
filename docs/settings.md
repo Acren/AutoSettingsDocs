@@ -63,7 +63,9 @@ Auto Settings is built on top of Unreal’s Console Variable (CVar) system, so a
 
 There are many common settings already implemented in the [example project](/example-project).
 
+:::info
 For a full list of CVars in the engine, check **Help > Console Variables** in the editor.
+:::
 
 There are also cases in which you might want to expose something as a setting that isn’t built into Unreal by default, for example audio levels.
 
