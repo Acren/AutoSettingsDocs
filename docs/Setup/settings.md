@@ -112,7 +112,7 @@ You can also register and bind a callback for a CVar at the same time, making it
 
 If this is set up correctly, the CVar should be registered, loading it’s value from the config if it is saved, and having some effect on the game when it is changed through the console. The only other thing that needs to be done is adding a menu setting to let the user control it as explained in the **Adding Settings** section.
 
-Check the [example project](/example-project) for full implementation of custom CVars to control gameplay elements and audio levels.  
+Check the [example project](/info/example-project) for full implementation of custom CVars to control gameplay elements and audio levels.  
 Or [read more about how to set up audio levels](#audio-levels) specifically.
 
 ### Manually setting the CVar
@@ -151,7 +151,7 @@ For setting quality levels on different devices, it's recommended to use the [De
 
 It's possible to use the Unreal hardware benchmark to set the scalability settings to recommended values based on the user's hardware performance.
 The `Auto Detect` function, which can be called from both Blueprint and C++, first runs the Unreal hardware benchmark and then applies and saves the resulting settings to the Auto Settings config.
-There is a working example of a button which does this in the [example project](/example-project).
+There is a working example of a button which does this in the [example project](/info/example-project).
 
 The performance threshold points that Unreal uses for each recommended setting level are controlled by config files.
 
@@ -212,7 +212,7 @@ In the WindowModeValueMask subclass, this would take the *1920x1080wf* console v
 
 **Audio levels** are a common way to use custom settings in Auto Settings. The plugin itself does not treat audio levels differently to any other setting, so the correct way to use them is to add a setting to your project for each audio level and have them modify the **Sound Classes** in your project.
 
-A working setup with multiple audio levels is implemented in the [example project](/example-project), though the following steps describe how to set one up from scratch:
+A working setup with multiple audio levels is implemented in the [example project](/info/example-project), though the following steps describe how to set one up from scratch:
 
 1. Create a **Sound Class** asset for the new audio level
 2. If applicable, set up parent or child Sound Classes. For example, if the new audio level is for **Sound Effects**, you may want to add the new **Sound Effect Sound Class** as a child of a **Master Sound Class** that you have already. This means the master volume will affect the sound effects.
