@@ -22,7 +22,7 @@ All settings have the following editable properties:
 - **Auto Save** - If checked, the setting will automatically update the config with the new value when the user changes the selection. If false, will need to be done manually with the Save or Cancel functions. Saved settings are stored in `<Project or package>\Saved\Config\<Platform>\Settings.ini` in the `[Settings]` section.
 
 :::tip
-It can be nice for layout purposes to wrap settings in a new *Setting Row* widget which consists of label text and a Named Slot to contain the control widget itself (See [example project](/example-project)) but you are free to set up the layout of your menu whichever way works best for you.
+It can be nice for layout purposes to wrap settings in a new *Setting Row* widget which consists of label text and a Named Slot to contain the control widget itself (See [example project](/info/example-project)) but you are free to set up the layout of your menu whichever way works best for you.
 :::
 
 ## Select Controls
