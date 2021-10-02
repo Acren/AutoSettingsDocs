@@ -67,7 +67,7 @@ The example project uses icons from [*Xelu’s free prompts pack*](https://those
 
 It's common to need to display player mappings in UI, for example to prompt the player to perform an action. The **Action Label** and **Axis Label** widgets can be placed in your UI and used to automatically display the correct key icons or text label for an Action or Axis mapping, and also dynamically update when the player's mappings are changed, or their Key Groups are changed in case they switch input devices.
 
-These widgets can be sub-classed following the [styling](/styling) guidelines to control the appearance including the text style and the icon sizes. These use the same logic as the **Action Mapping** and **Axis Mapping** widgets, and are in-fact used internally by them for displaying the current mappings.
+These widgets can be sub-classed following the [styling](/setup/styling) guidelines to control the appearance including the text style and the icon sizes. These use the same logic as the **Action Mapping** and **Axis Mapping** widgets, and are in-fact used internally by them for displaying the current mappings.
 
 If you want to directly read the active key mappings for a player, call the **Get Player Action Mapping** and **Get Player Axis Mapping** functions to access the key mappings applied to the player.
 
@@ -129,4 +129,4 @@ The example project demonstrates this using a preset switcher.
 
 You can also manually clear the saved inputs from the `Input.ini` config file by deleting them from the `[/Script/AutoSettings.InputMappingManager]` section, **then restarting the editor.**
 
-For more information on config files, see the [config files page.](/config-files/)
+For more information on config files, see the [config files page.](/info/config-files/)

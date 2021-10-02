@@ -11,7 +11,7 @@ The example project contains a fully configured menu showing off a typical integ
 In general you should use the example project that is the same version as the plugin, or if there if that doesn't exist, the next lowest.
 For example if you had plugin version *1.2.1*, there is no example project with that exact version so the correct example project to use would be *1.2*.
 
-[View compatibility of specific versions here](/versions)
+[View compatibility of specific versions here](/info/versions)
 
 ## Migrating assets from the example project
 
@@ -37,14 +37,14 @@ These are all implemented in the example project for demonstration purposes and 
 
 **All of the different custom CVars in the example project are registered in the DemoGameInstance Blueprint. Some of them are also implemented in DemoGameInstance, and some in other Blueprints.**
 
-[View documentation about registering and implementing custom CVars here](/settings/#console-variables)
+[View documentation about registering and implementing custom CVars here](/setup/settings/#console-variables)
 
 ### Audio Levels
 CVars: `GameAudio.MasterVolume`, `GameAudio.MusicVolume`, `GameAudio.SFXVolume`  
 Implemented in: ***DemoGameInstance***
 
 These settings are an example of how to control audio levels. Your project might have different categories, but the fundamentals will be the same. They need to be hooked up to the appropriate **Sound Class** and **Sound Mix** assets for your project. 
-[Read more about audio levels](/settings/#audio-levels)
+[Read more about audio levels](/setup/settings/#audio-levels)
 
 ### Icon Set
 CVar: `Game.IconSet`  

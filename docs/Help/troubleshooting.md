@@ -7,7 +7,7 @@ sidebar_position: 11
 
 #### Check the FAQ
 
-The [FAQ](/faq/) page might already have a solution for your issue.
+The [FAQ](/help/faq/) page might already have a solution for your issue.
 
 #### Check the output log
 
@@ -34,7 +34,7 @@ When the project is crashing, you should look for clues in the crash log or save
 #### Error in crash log: *Could not find SuperStruct SomeClass to create SomeClass_C*
 
 This usually means you are running on a non-Windows platform that has not been whitelisted in the .uplugin file.
-See [FAQ on enabling other platforms](/faq/#does-auto-settings-work-on-platforms-other-than-windows).
+See [FAQ on enabling other platforms](/help/faq/#does-auto-settings-work-on-platforms-other-than-windows).
 
 #### Error in crash log: *DXGI_ERROR_INVALID_CALL*
 
@@ -53,7 +53,7 @@ Open the console by pressing **~**, then enter the CVar name followed by a space
 If the CVar can be updated this way, there could be a problem with the configuration of the Setting.
 If updating the CVar this way also doesn't work, the problem is likely with CVar itself.
 
-[Troubleshooting CVars](/troubleshooting/#console-variables-are-not-working)
+[Troubleshooting CVars](/help/troubleshooting/#console-variables-are-not-working)
 
 #### Check that the setting is modifying the CVar value
 
@@ -62,7 +62,7 @@ The current value of the CVar should be outputted to the console. Modify the set
 If the CVar value does not update correctly, there could be a problem with the configuration of the Setting.
 If the CVar does update correctly, then the problem is likely with CVar itself.
 
-[Troubleshooting CVars](/troubleshooting/#console-variables-are-not-working)
+[Troubleshooting CVars](/help/troubleshooting/#console-variables-are-not-working)
 
 #### Check the output log
 
@@ -76,11 +76,11 @@ LogAutoSettings: Saving setting r.vsync with value 0
 ```
 If the logs are appearing correctly, then the problem is likely with the CVar itself.
 
-[Troubleshooting CVars](/troubleshooting/#console-variables-are-not-working)
+[Troubleshooting CVars](/help/troubleshooting/#console-variables-are-not-working)
 
 ## Input mappings are not working
 
-#### Start by [resetting saved inputs.](/input-binding/#resetting-saved-inputs)
+#### Start by [resetting saved inputs.](/setup/input-binding/#resetting-saved-inputs)
 
 If something strange is saved in the editor from version updates or changing configuration, this often fixes it.
 
@@ -100,10 +100,10 @@ Many CVars do not make an obvious visual difference in the viewport and there ma
 
 #### Check the example project
 
-See if the issue occurs in the [example project.](/example-project/)
+See if the issue occurs in the [example project.](/info/example-project/)
 If the issue does not happen in the example project, this could point to a configuration or implementation issue in your own project.
 
 #### Get support
 
-If still unable to fix the issue, read how to [get support.](/support/)
+If still unable to fix the issue, read how to [get support.](/help/support/)
 Make sure to provide all of the information listed on the support page.
