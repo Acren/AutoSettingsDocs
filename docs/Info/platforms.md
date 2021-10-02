@@ -6,6 +6,8 @@ sidebar_position: 9
 
 ## Non-windows platforms
 
+Auto Settings is primary developed and tested using Windows.
+
 Other platforms are not officially supported or tested as a target platform, but all of the plugin functionality is platform-independent and in fact multiple users have confirmed full compatibility with various other platforms.
 
 The project will need to support code and compile through Visual Studio or another IDE to support non-Windows platforms.

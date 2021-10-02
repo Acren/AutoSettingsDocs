@@ -18,6 +18,10 @@ The output log may show warnings, errors, or other clues that may help resolve t
 
 When the project won't build or package, check the log for errors.
 
+#### Error: *Missing precompiled manifest for 'AutoSettingsCore'* packaging non-Windows platform
+
+Make sure you have read [this](/info/platforms) and have the plugin within your project directory.
+
 #### Error: *Expecting to find a type to be declared in a module rules named 'AutoSettings' in UE4Rules*
 
 This is a known bug in Unreal 4.25.2 detailed [here](https://issues.unrealengine.com/issue/UE-95865).
