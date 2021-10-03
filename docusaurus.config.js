@@ -56,4 +56,57 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/Setup/installation',
+            from: ['/installation'],
+          },
+          {
+            to: '/Setup/umg-widgets',
+            from: ['/umg-wdigets'],
+          },
+          {
+            to: '/Setup/settings',
+            from: ['/settings'],
+          },
+          {
+            to: '/Setup/input-binding',
+            from: ['/input-binding'],
+          },
+          {
+            to: '/Setup/styling',
+            from: ['/styling'],
+          },
+          {
+            to: '/Info/config-files',
+            from: ['/confilg-files'],
+          },
+          {
+            to: '/Info/example-project',
+            from: ['/example-project'],
+          },
+          {
+            to: '/Info/versions',
+            from: ['/versions'],
+          },
+          {
+            to: '/Help/faq',
+            from: ['/faq'],
+          },
+          {
+            to: '/Help/troubleshooting',
+            from: ['/troubleshooting'],
+          },
+          {
+            to: '/Help/support',
+            from: ['/support'],
+          },
+        ],
+      },
+    ],
+  ],
 };
