@@ -222,19 +222,17 @@ A working setup with multiple audio levels is implemented in the [example projec
 3. Create a **Sound Mix** asset for the new audio level
 4. In your **Game Instance** class, [register a *float CVar*](#console-variables) and add a callback for the CVar which calls **Push Sound Mix Modifier** with the Sound Mix, and then **Set Sound Mix Class Override** with the Sound Mix and the Sound Class, and pass in the CVar value as the Volume. This is what actually changes the volume of the Sound Class when the value of the CVar is modified. 
 
-	![Image](img/audiolevels.png)
+	![Image](img/audiolevels_registerthendelay.jpg)
 
 	:::note
-	It's important that this happens after a **Delay** node (even with 0 duration) as the Audio Devices in Unreal are not created yet when the Game Instance **Init** function is called.
+	It's important that this happens after a **Delay** node (even with 0 duration) as the Audio Devices in Unreal are not created yet when the Game Instance **Init** function is called. The delay causes the the initial volume to be set later on after the Audio Device is set up.
 	:::
-
-	![Image](img/gameinstanceaudiodelay.png)
 	
 5. [Add a Setting Widget](#setting-widgets) to your menu to control the new CVar you created
 6. Add the new Sound Class to all of the audio assets that should use the new audio level
 
 :::tip
-For music, it's recommended to enable **Virtualize when silent** on the sound asset. This makes it so when its volume is set to zero and then increased again, the music keeps its playback time rather than starting from the beginning again.
+For music, it's recommended to enable **Virtualize when silent** on the sound wave asset. This makes it so when its volume is set to zero and then increased again, the music keeps its playback time rather than starting from the beginning again.
 :::
 
 ## Custom Setting Widgets
