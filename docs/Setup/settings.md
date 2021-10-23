@@ -83,12 +83,14 @@ There are also functions in this plugin to expose this to Blueprint, which we'll
 
 Registering CVars is best done as early as possible, so if you are registering it in Blueprint it would ideally be in your GameInstance class in the **Init** event.
 
-![Image](img/image10.png)
+![Image](img/cvar_register.jpg)
 
 Here you can call functions to register **float**, **integer**, **string**, or **bool** CVars.
 It’s also worth noting that these functions also check the settings config to see if there is a value stored, in which case that value is loaded instead of the default value parameter.
 
 You can call these functions anywhere, but Init is the earliest point in Blueprint.
+
+Once the CVar is registered, you can use the developer console (~ key by default) to check the current value or set a new value.
 
 ### Connecting the CVar
 
@@ -96,19 +98,19 @@ To actually make your new CVar do something, you’ll need to make your game che
 
 To check the value you can use the getter functions like this anywhere in your game:
 
-![Image](img/image13.png)
+![Image](img/cvar_print.jpg)
 
 However in most cases you will want to have your game respond to the CVar and execute something when it changes, such as updating the audio volume.
 
 This can be done by adding callback events which are fired when the CVar changes so that your game can respond to them.
 
-![Image](img/image17.png)
+![Image](img/cvar_callback.jpg)
 
 In this case we’re setting a sound mix’s volume to the value of the CVar whenever it is changed. If **Callback Immediately** is checked, the event will be fired with the current CVar value as soon as the callback is added, making it easier to apply the correct value when the game is launched or an object is constructed.
 
 You can also register and bind a callback for a CVar at the same time, making it easier to organise your Blueprint if the CVar is being used in the same place it is being registered.
 
-![Image](img/image9.png)
+![Image](img/cvar_registerwithcallback.jpg)
 
 If this is set up correctly, the CVar should be registered, loading it’s value from the config if it is saved, and having some effect on the game when it is changed through the console. The only other thing that needs to be done is adding a menu setting to let the user control it as explained in the **Adding Settings** section.
 
@@ -121,12 +123,21 @@ In most cases, there is no need to manually set the CVar value as it's controlle
 
 If you do find the need, *this could be indicitive that you are not using the plugin correctly*, though there are still some legitimate cases where this is helpful.
 
-To directly set CVar values you can use functions such as **Set Integer CVar** to do this. This is similar to typing it in the console.
+To apply a setting, the **Apply Setting** function can be used. This updates the CVar and has some additional error-checking and logging, and is the preferred method if you are updating the CVar that is used as a setting.
 
-Note that the **Set CVar** functions are the same as **applying** a setting, not **saving** it, so the new value will not be saved to config.
+![Image](img/setting_apply.jpg)
 
-To save a setting to config, instead use the **Save Setting** function with the CVar as the Key, and the appropriate stringified value.  
+To directly set a CVar value you can also use functions such as **Set Integer CVar** to do this. This is similar to typing it in the console and doesn't have any error-checking or logging.
+
+Note that **setting the CVar** or **applying the setting** is not the same as **saving** it, so the new value will not be saved to config and will be discarded if the game is closed.
+
+To save the setting to config, instead use the **Save Setting** function.  
 This will cause the value to be applied again when new instances of the game are opened.
+
+:::note
+**Save Setting** also applies the setting first, so it is not neccesary to call Apply Setting first.
+:::
+
 
 ## Default Values
 
