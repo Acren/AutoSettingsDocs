@@ -75,7 +75,7 @@ There are a few components to doing this:
 2. Using the CVar to control something in the game
 3. Adding a setting for the CVar (already covered)
 
-### Registering the CVar
+### Registering the CVar {#cvar-registration}
 
 Registering and using CVars in C++ is covered in the [Unreal documentation](https://docs.unrealengine.com/latest/INT/Programming/Development/Tools/ConsoleManager/index.html). If you are using C++, this is the best way to register a CVar.
 
@@ -132,7 +132,7 @@ This will cause the value to be applied again when new instances of the game are
 
 It's likely you'll at some point want to change the default values of your settings.
 
-When registering a new CVar in either C++ or Blueprint, you are given the option to specify a default value.
+When registering a new CVar in either C++ or Blueprint, you are given the option to specify a default value. See [CVar registration](#cvar-registration).
 
 This is useful when you are defining new CVars that are not built into the engine already, but you may find yourself with the need to change the default value of an existing CVar.
 
