@@ -28,6 +28,4 @@ If you do have a bug, crash, or any other issue please include the following inf
 - Does the issue occur in the [example project](/info/example-project/)?
 - If crashing, the .log file(s) from the `ProjectName/Saved/Logs` directory
 
-Thanks!
-
-*Acren / Sam*
+Thank you
