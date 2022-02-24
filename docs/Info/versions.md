@@ -13,6 +13,22 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.20 {#1_20}
+`UE 4.26` `UE 4.27` `Example Project 1.20`
+
+New:
+- Converted Settings Manager and Input Mapping Manager to Engine Subsystems
+- Exposed OnMappingsChanged event on Input Mapping Manager which can be bound to for notifications when a binding is modified
+- Added Get Player Action/Axis Mappings functions that can return multiple results
+- Added Get Player Mappings By Key function
+
+Fixed:
+- Fixed a crash when loading inputs saved with an older version
+
+Example project:
+- Example menu is now also viewable as a 3D world space menu using WidgetComponent
+- Register audio CVars before the delay so that they are immediately accessible by other systems, which fixes a warning in some scenarios
+
 ### 1.19.1 {#1_19_1}
 `UE 4.27` `Example Project 1.19`
 
