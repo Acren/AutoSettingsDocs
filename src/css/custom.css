@@ -5,7 +5,7 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Custom color overrides */
 :root {
   --ifm-color-primary: #83aaff;
   --ifm-color-primary-dark: #5c90ff;
@@ -25,6 +25,7 @@ html[data-theme='dark'] {
   --ifm-heading-color: rgb(210, 223, 230);
 }
 
+/* Admonitions styling */
 .alert {
   background-color: var(--ifm-background-surface-color);
   border-color: var(--ifm-alert-border-color);
@@ -82,4 +83,19 @@ details[open] summary {
 .alert--secondary {
   --ifm-alert-background-color: var(--ifm-color-emphasis-900);
   --ifm-alert-border-color: var(--ifm-color-emphasis-900);
+}
+
+/* Footer links centering */
+.footer__links {
+  justify-content: center;
+}
+
+.row .footer__col{
+  flex: 0 1 auto;
+  width: auto;
+}
+
+/* No margin on empty footer title */
+.footer__title:empty {
+  margin: 0;
 }

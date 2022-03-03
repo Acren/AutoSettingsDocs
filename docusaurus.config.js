@@ -35,6 +35,20 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      links:[
+        {
+          items: [
+            {
+              label: 'Marketplace',
+              href: 'https://www.unrealengine.com/marketplace/en-US/profile/Sam+Bonifacio'
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/itsAcren'
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Sam Bonifacio`,
     },
     prism: {
