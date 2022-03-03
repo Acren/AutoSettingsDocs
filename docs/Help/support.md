@@ -12,9 +12,8 @@ If you have a question or are seeking support for an issue, please check the [FA
 
 For support, bug reports, feature requests, etc, use the following channels:
 
-- [Unreal Forum](https://forums.unrealengine.com/unreal-engine/marketplace/1354733-auto-settings-game-options-and-input-binding-toolkit)
 - [Discord](https://discord.gg/ZuFP9DB)
-- [Twitter](https://twitter.com/itsAcren)
+- [Unreal Forum](https://forums.unrealengine.com/unreal-engine/marketplace/1354733-auto-settings-game-options-and-input-binding-toolkit)
 - [Email](mailto:acren.marketplace@gmail.com)
 
 ## Information to provide for support
