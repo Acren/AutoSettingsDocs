@@ -19,7 +19,7 @@ The example project does not always need to match, but it is recommended to use 
 - UE 5.0 now supported
 
 ### 1.20 {#1_20}
-`UE 4.26` `UE 4.27` `Example Project 1.20`
+`UE 4.27` `UE 4.26` `Example Project 1.20`
 
 New:
 - Converted Settings Manager and Input Mapping Manager to Engine Subsystems
