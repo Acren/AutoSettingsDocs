@@ -17,6 +17,7 @@ The example project does not always need to match, but it is recommended to use 
 `UE 5.1` `Example Project 1.22`
 
 - UE 5.1 now supported
+- Fixed warnings about struct initialization
 
 ### 1.21 {#1_21}
 `UE 5.0` `Example Project 1.21`
