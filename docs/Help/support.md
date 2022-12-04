@@ -25,6 +25,6 @@ If you do have a bug, crash, or any other issue please include the following inf
 - Steps to reproduce the issue
 - Does the issue occur in the editor, packaged builds, or both?
 - Does the issue occur in the [example project](/info/example-project/)?
-- If crashing, the .log file(s) from the `ProjectName/Saved/Logs` directory
+- If possible, the most recent .log file (usually `ProjectName.log`) from the `ProjectName/Saved/Logs` directory, after the issue occured
 
 Thank you
