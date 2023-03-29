@@ -13,6 +13,15 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.23 {#1_23}
+`UE 5.1` `Example Project 1.23`
+
+Fixed:
+- Fixed a bug where input label widgets would not respect the preserved inputs specified in the config
+
+Example project:
+- DemoPlayerController now skips updating the Player Input Key Group when there is a DebugCameraController, which fixes errors being logged when using Unreal's Debug Camera because of how it removes the existing Player Controller from the Local Player.
+
 ### 1.22 {#1_22}
 `UE 5.1` `Example Project 1.22`
 
