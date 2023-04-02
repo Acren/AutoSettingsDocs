@@ -28,10 +28,22 @@ Example project:
 - UE 5.1 now supported
 - Fixed warnings about struct initialization
 
+### 1.21.1 {#1_21_1}
+`UE 5.0` `Example Project 1.21`
+
+- Fixed a bug where input label widgets would not respect the preserved inputs specified in the config
+- Fixed warnings about struct initialization
+
 ### 1.21 {#1_21}
 `UE 5.0` `Example Project 1.21`
 
 - UE 5.0 now supported
+
+### 1.20.1 {#1_20_1}
+`UE 4.27` `Example Project 1.20`
+
+- Fixed a bug where input label widgets would not respect the preserved inputs specified in the config
+- Fixed warnings about struct initialization
 
 ### 1.20 {#1_20}
 `UE 4.27` `UE 4.26` `Example Project 1.20`
