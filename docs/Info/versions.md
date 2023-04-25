@@ -13,6 +13,11 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.23.1 {#1_23_1}
+`UE 5.1` `Example Project 1.23`
+
+- Fixed an editor crash when setting BindWidget properties on some widget types in the UMG editor
+
 ### 1.23 {#1_23}
 `UE 5.1` `Example Project 1.23`
 
@@ -27,6 +32,11 @@ Example project:
 
 - UE 5.1 now supported
 - Fixed warnings about struct initialization
+
+### 1.21.2 {#1_21_2}
+`UE 5.0` `Example Project 1.21`
+
+- Fixed an editor crash when setting BindWidget properties on some widget types in the UMG editor
 
 ### 1.21.1 {#1_21_1}
 `UE 5.0` `Example Project 1.21`
