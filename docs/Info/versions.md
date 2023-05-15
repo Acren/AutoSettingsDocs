@@ -13,6 +13,11 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.24 {#1_24}
+`UE 5.2` `Example Project 1.24`
+
+- UE 5.2 now supported
+
 ### 1.23.1 {#1_23_1}
 `UE 5.1` `Example Project 1.23`
 
