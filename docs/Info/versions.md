@@ -13,6 +13,11 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.24.1 {#1_24_1}
+`UE 5.2` `Example Project 1.24`
+
+- Input mappings are now stored in Settings.ini, which fixes an issue with mappings not being remembered in packages due to Input.ini no longer working in UE 5.2
+
 ### 1.24 {#1_24}
 `UE 5.2` `Example Project 1.24`
 
