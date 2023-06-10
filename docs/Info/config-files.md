@@ -4,7 +4,9 @@ sidebar_position: 7
 
 # Config Files
 
-Settings are saved to the `Settings.ini` config file in the `[Settings]` section. Input bindings are saved in `Input.ini` in the `[/Script/AutoSettings.InputMappingManager]` section.
+Settings are saved to the `Settings.ini` config file in the `[Settings]` section.
+
+Input bindings are saved to `Settings.ini` (or before 1.24.1, `Input.ini`) in the `[/Script/AutoSettings.InputMappingManager]` section.
 
 Unreal saves config files to different directories depending on the configuration:
 
