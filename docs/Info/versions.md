@@ -13,6 +13,12 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.25 {#1_25}
+`UE 5.3` `Example Project 1.25`
+
+- UE 5.3 now supported
+- Exposed input mapping structures to blueprint so that users can more easily inspect saved input mapping data
+
 ### 1.24.1 {#1_24_1}
 `UE 5.2` `Example Project 1.24`
 
