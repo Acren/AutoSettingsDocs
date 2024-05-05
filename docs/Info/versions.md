@@ -13,6 +13,12 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 1.26 {#1_26}
+`UE 5.4` `Example Project 1.26`
+
+- UE 5.4 now supported
+- Default settings .ini name changed from Settings.ini to UserSettings.ini. This is because Unreal now contains logic that prevents .ini files saving in packages unless they contain the string "user" in the name. There is still a workaround included in the plugin to keep existing names functioning, but it's recommended to use the new name if you're starting a new project. Please double check the project settings that this is correct for your project.
+
 ### 1.25 {#1_25}
 `UE 5.3` `Example Project 1.25`
 
