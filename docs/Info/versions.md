@@ -13,6 +13,68 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 2.0 Beta 1 {#2_0_beta_1}
+`UE 5.4` `Example Project 2.0`
+
+2.0 contains significant changes across the board. It's a very breaking upgrade and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
+
+If you're interested in trying this beta release, you can find the archived plugin files in the Extras folder inside the 1.27 version for UE 5.4.
+Extract the AutoSettings folder from the archive into the Plugins directory of your project.
+
+:::warning
+2.0 does not support legacy input in Unreal. If you want to keep using legacy input and don't plan on switching to Enhanced Input, you should stay on a 1.x version.
+:::
+
+:::warning
+Support for beta versions is limited, and they are not recommended for shipping.
+:::
+
+:::note
+Binaries for beta versions are not distributed and it must be compiled from the source.
+:::
+
+#### Fully reworked modular settings framework
+The core of the plugin has been fully reworked into a new modular framework. The same functionality as 1.x is still possible, but it's now a lot more flexible and easier to configure to a game's specific needs.
+- Projects can define Setting Type classes to control the functionality of one or more settings.
+- Setting Types can specify strategies to control how the settings that use them are applied and persisted.
+- Each individual setting is uniquely represented by a Setting Key. There can be many individual Setting Keys for different settings under a single Setting Type.
+- Setting Keys are hierarchical, similar to Gameplay Tags, which can be used to group settings.
+- Widgets that are placed in the UI are bound to these Setting Types or Setting Keys, rather than directly to Console Variables like the old system.
+- Setting Application Strategy controls how settings are applied. The default strategy uses console variables to apply settings, which is the same behavior as v1.x of the plugin.
+- Setting Storage Strategy controls how settings are saved and loaded. The default strategy uses config files to save settings, which is the same behavior as v1.x of the plugin.
+- Setting Registries are a new feature that allow multiple of the same setting to exist in different contexts and scopes.
+- Setting Registries allow a project to separate player-specific settings that may need to apply to individual local or splitscreen players, such as input mappings. By default, there is a Global Registry for settings like video and audio settings, and registry for each local player to manage that player's settings.
+- Default values for all settings are tracked automatically, and individual settings can now be easily reset to their default values.
+
+#### Reworked input mappings
+The input mapping system has also been overhauled to unify it with the new settings framework.
+- Input mappings now support Enhanced Input. (Legacy input is no longer supported.)
+- Input mappings are now Settings as part of the new settings framework. Input mapping settings use the Input Mapping Application Strategy, which applies the mapping to the player's Enhanced Input mappings. This should help input mappings feel more consistent with the rest of the settings in the plugin, giving them the many of the same features and API instead of a completely separate system like they were in 1.x
+
+#### Console Variable Classes
+Version 2.0 includes a new feature for Console Variable Classes.
+- Console Variable Classes can be created in Blueprint which can auto-register console variables and manage their logic, more closely reflecting how console variables are authored in c++.
+- Because they are discovered and registered by the plugin, this can be controlled more reliably than using the GameInstance Init function which was the approach in 1.x.
+- The functions to register console variables manually still exist, but using Console Variable Classes are the new recommended way in 2.0.
+
+#### CommonUI integration
+The plugin now contains an optional integration with the CommonUI plugin that will enable itself automatically if CommonUI is.
+- AutoSettings will integrate with controller data and button icons from CommonUI.
+- The integration contains a Button Group Setting. (Similar to the Radio Select setting from 1.x)
+- Various other minor utilities to integrate with CommonUI are also included
+Note: The plugin will still operate without CommonUI, but certain features won't be enabled.
+
+#### All new example menu
+The example project for 2.0 contains an new demo menu with various improvements over the original.
+- The UI is built on CommonUI, providing a foundation which is more likely to be directly compatible with other projects.
+- Full gamepad navigation is now supported.
+- The project contains a custom "Overall Scalability" setting controlling all of the other scalability settings, which is a common requirement for games.
+
+### 1.27 {#1_27}
+`UE 5.4` `Example Project 1.26`
+
+- Added 2.0 Beta 1 version plugin to Extras folder
+
 ### 1.26 {#1_26}
 `UE 5.4` `Example Project 1.26`
 
