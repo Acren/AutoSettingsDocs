@@ -13,7 +13,7 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
-### 2.0 Beta 1 {#2_0_beta_1}
+### 2.0.0-beta.1 {#2_0_0_beta_1}
 `UE 5.4` `Example Project 2.0`
 
 2.0 contains significant changes across the board. It's a very breaking upgrade and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
