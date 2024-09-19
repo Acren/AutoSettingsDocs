@@ -18,7 +18,7 @@ The example project does not always need to match, but it is recommended to use 
 
 2.0 contains significant changes across the board. It's a very breaking upgrade and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
 
-If you're interested in trying this beta release, you can find the archived plugin files in the Extras folder inside the 1.27 version for UE 5.4.
+If you're interested in trying this beta release, you can find the archived plugin files in the Resources folder inside the 1.27 version for UE 5.4.
 Extract the AutoSettings folder from the archive into the Plugins directory of your project.
 
 :::warning
