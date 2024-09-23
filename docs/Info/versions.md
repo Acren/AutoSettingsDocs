@@ -16,7 +16,7 @@ The example project does not always need to match, but it is recommended to use 
 ### 2.0.0-beta.1 {#2_0_0_beta_1}
 `UE 5.4` `Example Project 2.0`
 
-2.0 contains significant changes across the board. It's a very breaking upgrade and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
+2.0 contains significant changes across the board. It's very compatibility-breaking and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
 
 If you're interested in trying this beta release, you can find the archived plugin files in the Resources folder inside the 1.27 version for UE 5.4.
 Extract the AutoSettings folder from the archive into the Plugins directory of your project.
@@ -49,10 +49,11 @@ The core of the plugin has been fully reworked into a new modular framework. The
 #### Reworked input mappings
 The previous input mapping system has been deprecated and input mappings are now handled by the new settings framework.
 - Input mappings now support Enhanced Input. (Legacy input is no longer supported.)
-- Input mappings are now Settings as part of the new settings framework. Input mapping settings use the Input Mapping Application Strategy, which applies the mapping to the player's Enhanced Input mappings. This should help input mappings feel more consistent with the rest of the settings in the plugin, giving them the many of the same features and API instead of a completely separate system like they were in 1.x
-- Added a Rich Text Block decorator that allows text to be dynamically substituted for button icons for actions or specific keys at runtime.
+- Input mappings are now Settings as part of the new settings framework.
+- Input mapping settings use the Input Mapping Application Strategy, which applies the mapping to the player's Enhanced Input mappings. This should help input mappings feel more consistent with the rest of the settings in the plugin, giving them the many of the same features and API instead of a completely separate system like they were in 1.x
+- Added a Rich Text Block decorator that allows text to be dynamically substituted with button icons representing actions or specific keys at runtime.
 - The Input Mapping Setting widget (previously Action Input Mapping / Axis Input Mapping + Bind Capture Button widgets) now uses an input processor to listen for inputs. This should be more consistent and less prone to interference from Slate Focus and Game UI mode, and other input systems such as CommonUI.
-- The Input Mapping Setting listening state no longer requires a prompt widget to be constructed as the listening logic is now decoupled from the UI representation.
+- The Input Mapping Setting listening state no longer requires a prompt widget to be created, as the listening logic is now decoupled from the UI representation.
 - The plugin now contains an option in the project settings to invert the right gamepad thumbstick vertical axis, in order to reverse the inversion that Unreal applies to it by default. This is intended to help with consistency when allowing thumbsticks to be remapped between different actions.
 
 #### Console Variable Classes
