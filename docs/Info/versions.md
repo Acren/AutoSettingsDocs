@@ -18,8 +18,11 @@ The example project does not always need to match, but it is recommended to use 
 
 2.0 contains significant changes across the board. It's very compatibility-breaking and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
 
-If you're interested in trying this beta release, you can find the archived plugin files in the Resources folder inside the 1.27 version for UE 5.4.
-Extract the AutoSettings folder from the archive into the Plugins directory of your project.
+If you're interested in trying this beta release, you can access the download the archive directly from Fab:
+1. Visit the [Auto Settings](https://www.fab.com/listings/6166897a-d04b-46d5-b2cc-a692a74b0698) page on Fab
+2. Click the Download button on the right side panel
+3. Select the `autosettings_200_beta1_ue54_pluginbuild.zip` archive
+4. Extract the AutoSettings folder from the archive into the Plugins directory of your UE 5.4 project
 
 :::warning
 2.0 does not support legacy input in Unreal. If you want to keep using legacy input and don't plan on switching to Enhanced Input, you should stay on a 1.x version.
