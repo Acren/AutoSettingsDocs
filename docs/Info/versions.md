@@ -81,10 +81,16 @@ The example project for 2.0 contains an new demo menu with various improvements 
 - Input mapping conflicts now open a dialog prompting how the user would like to resolve it.
 - Controller and keyboard/mouse controls are now separated into different tabs.
 
+### 1.28 {#1_28}
+`UE 5.4` `Example Project 1.26`
+
+- Input mappings save location changed from Settings.ini to UserSettings.ini to fix issues caused by the change in UE 5.4 preventing the previous config files being created if they don't contain the string "user" in the name
+- Removed the 2.0 beta from the Resources folder as it is now available directly on Fab
+
 ### 1.27 {#1_27}
 `UE 5.4` `Example Project 1.26`
 
-- Added 2.0 Beta 1 version plugin to Extras folder
+- Added 2.0 Beta 1 version plugin to Resources folder
 
 ### 1.26 {#1_26}
 `UE 5.4` `Example Project 1.26`
