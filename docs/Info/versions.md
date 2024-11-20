@@ -81,6 +81,11 @@ The example project for 2.0 contains an new demo menu with various improvements 
 - Input mapping conflicts now open a dialog prompting how the user would like to resolve it.
 - Controller and keyboard/mouse controls are now separated into different tabs.
 
+### 1.29 {#1_29}
+`UE 5.5` `Example Project 1.29`
+
+- UE 5.5 now supported
+
 ### 1.28 {#1_28}
 `UE 5.4` `Example Project 1.26`
 
