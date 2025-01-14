@@ -13,15 +13,20 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 2.0.0-beta.2 {#2_0_0_beta_2}
+`UE 5.5` `Example Project 2.0.0-beta.2`
+
+- UE 5.5 now supported
+
 ### 2.0.0-beta.1 {#2_0_0_beta_1}
-`UE 5.4` `Example Project 2.0`
+`UE 5.4` `Example Project 2.0.0-beta.1`
 
 2.0 contains significant changes across the board. It's very compatibility-breaking and it would be wise to consider it a completely new plugin that would require integration almost from scratch.
 
 If you're interested in trying this beta release, you can access the download the archive directly from Fab:
 1. Visit the [Auto Settings](https://www.fab.com/listings/6166897a-d04b-46d5-b2cc-a692a74b0698) page on Fab
 2. Click the Download button on the right side panel
-3. Select the `autosettings_200_beta1_ue54_pluginbuild.zip` archive
+3. Select the `autosettings_200_beta1_ue54_pluginbuild.zip` archive (or a more recent version if applicable)
 4. Extract the AutoSettings folder from the archive into the Plugins directory of your UE 5.4 project
 
 :::warning
