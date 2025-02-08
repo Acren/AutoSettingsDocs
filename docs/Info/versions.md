@@ -13,6 +13,19 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 2.0.0-beta.3 {#2_0_0_beta_3}
+`UE 5.4` `UE 5.5` `Example Project 2.0.0-beta.3`
+
+- Fixed a crash if a Key Icon Source is not specified in the project settings.
+- Fixed some crashes and ensures that could occur during multiplayer Play In Editor.
+- Fixed a crash if the wrong Enhanced Input User Settings class is specified in the project settings.
+- Fixed an issue where using F11 to change fullscreen mode would reset some of the scalability settings, due to Unreal's default GameUserSettings object. This requires assigning a new AutoSettingsGameUserSettings class in the project settings.
+- Code improvements and cleanup
+
+Example Project:
+- Disabled ticking in the open settings prompt widget which was triggering a crash in CommonUI.
+- Fixed some errors occuring in multiplayer from the server attempting to access the settings of remote players.
+
 ### 2.0.0-beta.2 {#2_0_0_beta_2}
 `UE 5.5` `Example Project 2.0.0-beta.2`
 
