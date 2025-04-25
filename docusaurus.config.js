@@ -27,6 +27,10 @@ module.exports = {
           label: 'Documentation',
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://www.unrealengine.com/marketplace/en-US/profile/Sam+Bonifacio',
           label: 'Marketplace',
           position: 'right',
@@ -63,6 +67,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          lastVersion: '1.x',
+          versions: {
+            current: {
+              label: '2.x',
+              path: '2.x',
+            },
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
