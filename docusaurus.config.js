@@ -29,6 +29,7 @@ module.exports = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
+          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
         },
         {
           href: 'https://www.unrealengine.com/marketplace/en-US/profile/Sam+Bonifacio',
@@ -115,10 +116,6 @@ module.exports = {
             from: ['/example-project'],
           },
           {
-            to: '/Info/versions',
-            from: ['/versions'],
-          },
-          {
             to: '/Help/faq',
             from: ['/faq'],
           },
@@ -129,6 +126,10 @@ module.exports = {
           {
             to: '/Help/support',
             from: ['/support'],
+          },
+          {
+            to: '/versions',
+            from: ['/Info/versions'],
           },
         ],
       },
