@@ -13,6 +13,24 @@ The example project does not always need to match, but it is recommended to use 
 
 ## Release Notes
 
+### 2.0.0-beta.4 {#2_0_0_beta_4}
+`UE 5.4` `UE 5.5` `Example Project 2.0.0-beta.3`
+
+- Blueprint-exposed functions in `SettingRegistry` to manually apply and save settings:
+	- `ApplySettingByType`
+	- `ApplySettingByKey`
+	- `SaveSettingByType`
+	- `SaveSettingByKey`
+- Added functions to allow changing the represented setting of control widgets at runtime:
+	- `SetSetting` on `AutoSettingWidget`
+	- `SetMapping` on `InputMappingSettingWidget`
+- Renamed all setting widgets to end with `SettingWidget` for clarity and consistency.
+- Renamed `SettingStorageStrategy` to `SettingPersistenceStrategy` for clarity about it's purpose.
+- Fixed a crash if the `EnhancedInputUserSettings` is null.
+- Fixed a crash when the `SettingType` on an `AutoSettingWidget` is null.
+- Added CoreRedirects for v1 Console functions to their new v2 counterparts so that the functions don't break when updating.
+- Combined functions such as `RegisterIntConsoleVariable` and `RegisterIntConsoleVariableWithCallback` for all applicable types. Now `RegisterIntConsoleVariable` functions allow for passing in an optional callback, rather than needing a separate function.
+
 ### 2.0.0-beta.3 {#2_0_0_beta_3}
 `UE 5.4` `UE 5.5` `Example Project 2.0.0-beta.3`
 
