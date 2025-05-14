@@ -68,10 +68,6 @@ If you're interested in trying this beta release, you can access the download th
 Support for beta versions is limited, and they are not recommended for shipping.
 :::
 
-:::note
-Binaries for beta versions are not distributed and it must be compiled from the source.
-:::
-
 #### Fully reworked modular settings framework
 The core of the plugin has been fully reworked into a new modular framework. The same functionality as 1.x is still possible, but it's now a lot more flexible and easier to configure to a game's specific needs.
 - Projects can define Setting Type classes to control the functionality of one or more settings.
