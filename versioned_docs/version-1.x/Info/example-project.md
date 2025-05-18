@@ -11,7 +11,7 @@ The example project contains a fully configured menu showing off a typical integ
 In general you should use the example project that is the same version as the plugin, or if there if that doesn't exist, the next lowest.
 For example if you had plugin version *1.2.1*, there is no example project with that exact version so the correct example project to use would be *1.2*.
 
-[View compatibility of specific versions here](/info/versions)
+[View compatibility of specific versions here](/versions)
 
 ## Migrating assets from the example project
 
