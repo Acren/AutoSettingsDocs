@@ -32,8 +32,8 @@ module.exports = {
           dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
         },
         {
-          href: 'https://www.unrealengine.com/marketplace/en-US/profile/Sam+Bonifacio',
-          label: 'Marketplace',
+          href: 'https://www.fab.com/sellers/Sam%20Bonifacio',
+          label: 'Fab',
           position: 'right',
         },
       ],
@@ -44,12 +44,8 @@ module.exports = {
         {
           items: [
             {
-              label: 'Marketplace',
-              href: 'https://www.unrealengine.com/marketplace/en-US/profile/Sam+Bonifacio'
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/itsAcren'
+              label: 'Fab',
+              href: 'https://www.fab.com/sellers/Sam%20Bonifacio'
             },
           ],
         },
